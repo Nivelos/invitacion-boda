@@ -1,0 +1,11 @@
+.glow:hover {
+    box-shadow: 0 0 15px rgba(123, 112, 85, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  button,
+  input,
+  select {
+    font-family: inherit;
+  }
+  

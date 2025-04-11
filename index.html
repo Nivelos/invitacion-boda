@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stephanie & Aldair</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-center text-gray-800 bg-fixed bg-[url('https://www.transparenttextures.com/patterns/pw-maze-white.png')]">
+
+  <!-- Encabezado superior con logo y frase -->
+  <section class="flex flex-col items-center justify-center py-12 bg-[#fdfaf5] fade-in slide-up min-h-[40vh]">
+    <img src="img/logo.png" alt="Logo de Stephanie y Aldair" class="w-32 h-auto mb-4" />
+    <p class="italic text-lg text-[#7b7055] text-center max-w-xl">"Paguenme una feria por la pagina, no sean malos me muero de hambre"</p>
+  </section>
+
+  <!-- Encabezado con parallax reducido -->
+  <section class="relative h-[50vh] flex justify-center items-center text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[url('img/portada.jpg')] bg-cover bg-center blur-md opacity-70"></div>
+    <div class="relative z-10 text-center px-4">
+      <p class="uppercase tracking-widest text-[15px] text-black">TENEMOS EL HONOR DE INVITARTE A NUESTRA BODA</p>
+      <h1 class="text-6xl mt-2 romantic-font text-black">Stephanie y Aldair</h1>
+    </div>
+  </section>
+
+
+  <!-- Fecha central -->
+  <section class="mt-10 fade-in slide-up">
+    <p class="uppercase text-sm">SÁBADO</p>
+    <div class="text-6xl font-bold text-[#7b7055]">15</div>
+    <p class="uppercase text-sm tracking-widest mt-4">NOVIEMBRE</p>
+    <p class="text-sm">2025 - 4:00 PM</p>
+  </section>
+
+  <!-- Cuenta regresiva -->
+  <section class="mb-12 fade-in slide-up">
+    <!-- Título con efecto decorativo -->
+    <p class="text-[#7b7055] text-3xl romantic-font italic tracking-wide mb-6 mt-8 relative inline-block">
+      <span class="before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:bg-[#c7b198] before:rounded-full before:scale-x-50 before:origin-center before:transition-transform before:duration-500 hover:before:scale-x-100">
+        Solo faltan...
+      </span>
+    </p>
+
+  <!-- Tarjetas del contador -->
+  <div class="flex justify-center space-x-4 text-white">
+    <div class="bg-[#7b7055] px-5 py-3 rounded shadow-lg transition duration-300 hover:scale-105">
+      <div id="days" class="text-xl font-semibold">0</div>
+      <div class="text-xs">DÍAS</div>
+    </div>
+    <div class="bg-[#7b7055] px-5 py-3 rounded shadow-lg transition duration-300 hover:scale-105">
+      <div id="hours" class="text-xl font-semibold">0</div>
+      <div class="text-xs">HORAS</div>
+    </div>
+    <div class="bg-[#7b7055] px-5 py-3 rounded shadow-lg transition duration-300 hover:scale-105">
+      <div id="minutes" class="text-xl font-semibold">0</div>
+      <div class="text-xs">MINUTOS</div>
+    </div>
+    <div class="bg-[#7b7055] px-5 py-3 rounded shadow-lg transition duration-300 hover:scale-105">
+      <div id="seconds" class="text-xl font-semibold">0</div>
+      <div class="text-xs">SEGUNDOS</div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Detalles del evento -->
+  <section class="fade-in slide-up py-8 px-6">
+    <h2 class="text-2xl font-bold text-[#7b7055] mb-4">Detalles del evento</h2>
+    <p class="mb-2">📍 Lugar: San Jerónimo, Zacatecas</p>
+    <p class="mb-2">🎩 Código de vestimenta: Formal elegante</p>
+    <p class="mb-2">⏰ Hora de llegada recomendada: 3:30 PM</p>
+    <a href="https://maps.google.com?q=San+Geronimo+Zacatecas" target="_blank" class="text-pink-700 underline">Ver en Google Maps</a>
+  </section>
+
+  <!-- Nuestros Padres -->
+  <section class="fade-in slide-up py-10 px-6">
+    <h2 class="text-2xl romantic-font text-[#7b7055] mb-6 text-5xl">Nuestros Padres:</h2>
+
+    <div class="mb-6">
+      <h3 class="uppercase text-sm font-semibold tracking-wide text-[#444]">De la novia</h3>
+      <p class="italic text-gray-700">Fanny Mayela Lara de la Rosa<br>Luis Ángel Ledezma Lopez</p>
+    </div>
+
+    <div>
+      <h3 class="uppercase text-sm font-semibold tracking-wide text-[#444]">Del novio</h3>
+      <p class="italic text-gray-700 mb-2">Papá de Aldi<br>Mamá de Aldi</p>
+    </div>
+  </section>
+
+  <!-- Participantes del ritual -->
+  <section class="fade-in slide-up py-10 px-6 text-center">
+    <h2 class="text-2xl romantic-font text-[#7b7055] mb-6 text-5xl">Nuestros cómplices de amor</h2>
+
+  <!-- ANILLOS -->
+  <div class="mb-6">
+    <img src="img/icon-anillos.png" alt="Anillos" class="w-36 h-auto mx-auto mb-2" />
+    <h3 class="uppercase text-sm font-semibold tracking-widest text-[#444]">Anillos</h3>
+    <p class="italic text-gray-700">Nombre Persona 1<br>Nombre Persona 2</p>
+  </div>
+
+  <!-- LAZO -->
+  <div class="mb-6">
+    <img src="img/icon-lazo.png" alt="Lazo" class="w-36 h-auto mx-auto mb-2" />
+    <h3 class="uppercase text-sm font-semibold tracking-widest text-[#444]">Lazo</h3>
+    <p class="italic text-gray-700">Nombre Persona 1<br>Nombre Persona 2</p>
+  </div>
+
+  <!-- ARRAS -->
+  <div class="mb-6">
+    <img src="img/icon-arras.png" alt="Arras" class="w-36 h-auto mx-auto mb-2" />
+    <h3 class="uppercase text-sm font-semibold tracking-widest text-[#444]">Arras</h3>
+    <p class="italic text-gray-700">Nombre Persona 1<br>Nombre Persona 2</p>
+  </div>
+
+  <!-- VELACIÓN -->
+  <div>
+    <img src="img/icon-velacion.png" alt="Velación" class="w-36 h-auto mx-auto mb-2" />
+    <h3 class="uppercase text-sm font-semibold tracking-widest text-[#444]">Velación</h3>
+    <p class="italic text-gray-700">Nombre Persona 1<br>Nombre Persona 2</p>
+  </div>
+
+  <section class="fade-in slide-up py-10 px-6 text-center">
+    <!-- Título manuscrito -->
+    <div> 
+      <img src="img/icon-iglesia.png" alt="Iglesia" class="w-36 h-auto mx-auto mb-2" />
+      <h2 class="romantic-font text-3xl text-[#7b7055] mb-6">Iglesia "nombre iglesia"</h2>
+    <div class="inline-block border-4 border-[#c7b198] p-1 bg-white shadow-md">
+      <img src="img/iglesia.png" alt="Iglesia Imagen" class="max-w-full h-auto" />
+    </div>
+    </div>
+    <!-- Imagen con marco dorado -->
+    <div> 
+      <img src="img/icon-lugar.png" alt="Lugar" class="w-36 h-auto mx-auto mb-2" />
+      <h2 class="romantic-font text-3xl text-[#7b7055] mb-6">Baluarte San Jéronimo</h2>
+      <p class="italic text-gray-700">RECEPCIÓN X:XX PM</p>
+    </div>
+    <div class="inline-block border-4 border-[#c7b198] p-1 bg-white shadow-md mt-6">
+      <img src="img/santuario.png" alt="Baluarte San Jerónimo" class="max-w-full h-auto" />
+    </div>
+    <!-- Dirección y botón de cómo llegar -->
+    <div class="mt-4 text-center">
+      <p class="italic text-[#7b7055] mb-4">
+        Baluarte San Jerónimo, Guadalupe 701, 98650 San Jerónimo, Zac.
+      </p>
+      <a href="https://www.google.com/maps?q=Baluarte+San+Jerónimo,+Guadalupe+701,+98650+San+Jerónimo,+Zacatecas"
+        target="_blank"
+        class="inline-block bg-[#7b7055] text-white px-5 py-2 rounded transition duration-300 hover:bg-[#a58f74] active:bg-[#5e513e]">
+        Cómo llegar
+      </a>
+    </div>
+  </section>  
+
+  <!-- Itinerario de Boda intercalado con línea completa y puntos -->
+  <section class="fade-in slide-up py-2 px-6 text-center">
+    <h2 class="text-2xl romantic-font text-[#7b7055] mb-10 text-5xl">Itinerario de Boda</h2>
+    <div class="relative max-w-3xl mx-auto">
+      <!-- Línea central -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 top-0 h-[2240px] w-[3px] bg-[#c7b198]"></div>
+
+      <!-- Evento 1 -->
+      <div class="mb-10 flex justify-start items-center relative mt-[-40px]">
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-[0px] w-4 h-4 bg-[#c7b198] rounded-full z-10"></div>
+        <div class="w-1/2 pr-6 text-right">
+          <p class="text-sm text-[#7b7055] font-semibold">6:00 PM</p>
+          <p class="italic">Ceremonia Religiosa</p>
+        </div>
+        <div class="w-1/2 pl-2 flex justify-start items-center">
+          <img src="img/icon-ceremonia-evento.png" class="w-22 h-22 my-2" />
+        </div>
+      </div>
+
+      <!-- Evento 2 -->
+      <div class="mb-10 flex justify-end items-center relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-[13.33px] w-4 h-4 bg-[#c7b198] rounded-full z-10"></div>
+        <div class="w-1/2 pr-2 flex justify-end items-center">
+          <img src="img/icon-recepcion-evento.png" class="w-22 h-22 my-2" />
+        </div>
+        <div class="w-1/2 pl-6 text-left">
+          <p class="text-sm text-[#7b7055] font-semibold">8:00 PM</p>
+          <p class="italic">Recepción</p>
+        </div>
+      </div>
+
+      <!-- Evento 3 -->
+      <div class="mb-10 flex justify-start items-center relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-[26.66px] w-4 h-4 bg-[#c7b198] rounded-full z-10"></div>
+        <div class="w-1/2 pr-6 text-right">
+          <p class="text-sm text-[#7b7055] font-semibold">9:00 PM</p>
+          <p class="italic">Cena</p>
+        </div>
+        <div class="w-1/2 pl-2 flex justify-start items-center">
+          <img src="img/icon-cena-evento.png" class="w-22 h-22 my-2" />
+        </div>
+      </div>
+
+      <!-- Evento 4 -->
+      <div class="mb-10 flex justify-end items-center relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-[39.99px] w-4 h-4 bg-[#c7b198] rounded-full z-10"></div>
+        <div class="w-1/2 pr-2 flex justify-end items-center">
+          <img src="img/icon-vals-evento.png" class="w-22 h-22 my-2" />
+        </div>
+        <div class="w-1/2 pl-6 text-left">
+          <p class="text-sm text-[#7b7055] font-semibold">9:45 PM</p>
+          <p class="italic">Vals</p>
+        </div>
+      </div>
+
+      <!-- Evento 5 -->
+      <div class="mb-10 flex justify-start items-center relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-[53.32px] w-4 h-4 bg-[#c7b198] rounded-full z-10"></div>
+        <div class="w-1/2 pr-6 text-right">
+          <p class="text-sm text-[#7b7055] font-semibold">10:15 PM</p>
+          <p class="italic">Fiesta</p>
+        </div>
+        <div class="w-1/2 pl-2 flex justify-start items-center">
+          <img src="img/icon-fiesta-evento.png" class="w-22 h-22 my-2" />
+        </div>
+      </div>
+
+      <!-- Evento 6 (final, centrado bajo la línea) -->
+      <div class="mb-10 flex flex-col items-center relative">
+        <!-- Punto final en la línea -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-[66.65px] w-4 h-4 bg-[#c7b198] rounded-full z-10"></div>
+        <!-- Texto y logo centrados -->
+        <div class="mt-20 text-center">
+          <p class="text-sm text-[#7b7055] font-semibold">2:00 AM</p>
+          <p class="italic mb-4">Nos despedimos</p>
+          <img src="img/icon-despedida-evento.png" class="w-30 h-20 mx-auto" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Código de Vestimenta -->
+  <section class="fade-in slide-up py-10 px-6 text-center">
+    <h2 class="romantic-font text-3xl text-[#7b7055] mb-4">Código de Vestimenta</h2>
+    <p class="uppercase tracking-wide font-semibold mb-4 text-[#7b7055]">Formal</p>
+
+    <!-- Íconos -->
+    <div class="flex justify-center items-center space-x-6 mb-6">
+      <img src="img/vestido.png" alt="vestido" class="w-36 h-auto" />
+      <img src="img/traje.png" alt="traje" class="w-36 h-auto" />
+    </div>
+
+    <!-- Nota importante -->
+    <p class="text-[#7b7055] font-medium mb-2 uppercase">Por favor no usar blanco o similares</p>
+    <p class="italic text-sm text-[#7b7055] mb-6">(Colores reservados para la novia)</p>
+
+    <!-- Nota sobre niños -->
+    <p class="italic text-sm text-[#7b7055] max-w-lg mx-auto">
+      No se si quieran niños o no
+    </p>
+  </section>
+
+
+  <!-- Galería de fotos -->
+  <section class="fade-in py-10 px-6">
+    <h2 class="text-2xl font-bold text-[#7b7055] mb-6">Nuestros momentos</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow-md zoom-in" alt="foto1">
+      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow-md zoom-in" alt="foto2">
+      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow-md zoom-in" alt="foto3">
+    </div>
+  </section>
+
+  <!-- Historia de amor -->
+  <section class="fade-in slide-up py-10 px-6">
+    <h2 class="text-2xl font-bold text-[#7b7055] mb-4">Nuestra historia</h2>
+    <p class="max-w-xl mx-auto">Pendiente al pago.</p>
+  </section>
+
+  <!-- Mesa de regalos -->
+  <section class="fade-in slide-up py-10 px-6">
+    <h2 class="text-2xl font-bold text-[#7b7055] mb-4">Mesa de regalos</h2>
+    <p>Tu presencia es el mejor regalo, pero si deseas hacernos un obsequio puedes visitar nuestra mesa en línea:</p>
+    <a href="https://www.amazon.com.mx" target="_blank" class="text-pink-700 underline mt-2 inline-block">Ver mesa de regalos</a>
+  </section>
+
+  <!-- Mensaje de despedida -->
+  <section class="fade-in slide-up py-10 px-6 text-center">
+    <h2 class="romantic-font text-3xl text-[#7b7055] mb-4">¡Te esperamos!</h2>
+    <p class="uppercase tracking-wide text-[#7b7055] max-w-xl mx-auto leading-relaxed">
+      Tu presencia es importante para nosotros,<br />
+      por favor confirma tu asistencia.
+    </p>
+  </section>
+
+
+  <!-- Script de cuenta regresiva -->
+  <script>
+    const countdown = () => {
+      const eventDate = new Date('2025-11-15T16:00:00');
+      const now = new Date();
+      const diff = eventDate - now;
+      if (diff <= 0) return;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / 1000 / 60) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    };
+    setInterval(countdown, 1000);
+    countdown();
+  </script>
+
+  <!-- Script empezar la pagina desde arriba -->
+  <script>
+    window.scrollTo(0, 0);
+  </script>
+
+
+</body>
+</html>
