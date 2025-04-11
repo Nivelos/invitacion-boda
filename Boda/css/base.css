@@ -1,0 +1,14 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to bottom, #f2f2ef, #e8e5dc);
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .romantic-font {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  a {
+    transition: all 0.3s ease;
+  }
+  
