@@ -262,9 +262,9 @@
   <section class="fade-in py-10 px-6">
     <h2 class="text-2xl font-bold text-[#7b7055] mb-6">Nuestros momentos</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow-md zoom-in" alt="foto1">
-      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow-md zoom-in" alt="foto2">
-      <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow-md zoom-in" alt="foto3">
+      <img src="/img/fotohistoria1.jpg" class="rounded-lg shadow-md zoom-in" alt="foto1">
+      <img src="/img/fotohistoria2.jpg" class="rounded-lg shadow-md zoom-in" alt="foto2">
+      <img src="/img/fotohistoria3.jpg" class="rounded-lg shadow-md zoom-in" alt="foto3">
     </div>
   </section>
 
@@ -280,16 +280,6 @@
     <p>Tu presencia es el mejor regalo, pero si deseas hacernos un obsequio puedes visitar nuestra mesa en línea:</p>
     <a href="https://www.amazon.com.mx" target="_blank" class="text-pink-700 underline mt-2 inline-block">Ver mesa de regalos</a>
   </section>
-
-  <!-- Mensaje de despedida -->
-  <section class="fade-in slide-up py-10 px-6 text-center">
-    <h2 class="romantic-font text-3xl text-[#7b7055] mb-4">¡Te esperamos!</h2>
-    <p class="uppercase tracking-wide text-[#7b7055] max-w-xl mx-auto leading-relaxed">
-      Tu presencia es importante para nosotros,<br />
-      por favor confirma tu asistencia.
-    </p>
-  </section>
-
 
   <!-- Script de cuenta regresiva -->
   <script>
@@ -318,6 +308,80 @@
     window.scrollTo(0, 0);
   </script>
 
+<!-- Confirmación de asistencia -->
+<section class="fade-in slide-up py-10 px-6 text-center" id="confirmacion">
+  <h2 class="romantic-font text-3xl text-[#7b7055] mb-4">Confirma tu asistencia</h2>
+  <p class="mb-6 text-[#7b7055]">Por favor, llena el siguiente formulario para confirmar tu presencia en nuestra boda.</p>
 
+  <form id="form-asistencia" action="https://formsubmit.co/ec7a8b0b98ae9f06f7d8f1d944ae35b7" method="POST" class="max-w-md mx-auto space-y-4">
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="nombre" required placeholder="Tu nombre(s)" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c7b198]" />
+    
+    <input type="text" name="apellido_paterno" required placeholder="Apellido paterno" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c7b198]" />
+
+    <input type="text" name="apellido_materno" required placeholder="Apellido materno" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c7b198]" />
+
+    <select name="asistencia" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c7b198]">
+      <option value="">¿Asistirás?</option>
+      <option value="Sí, asistiré">Sí, asistiré</option>
+      <option value="No podré asistir">No podré asistir</option>
+    </select>
+
+    <textarea name="mensaje" rows="3" placeholder="¿Algún mensaje para los novios?" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c7b198]"></textarea>
+
+    <button type="submit" class="bg-[#7b7055] text-white px-6 py-2 rounded hover:bg-[#a58f74] transition">
+      Enviar confirmación
+    </button>
+  </form>
+
+  <!-- Mensaje de éxito -->
+  <div id="gracias" class="hidden mt-6 text-green-600 font-semibold text-lg">
+    ¡Gracias por confirmar tu asistencia! 💌
+  </div>
+</section>
+
+<!-- Script para mostrar el mensaje de gracias -->
+<script>
+  const form = document.getElementById('form-asistencia');
+  const gracias = document.getElementById('gracias');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita redireccionamiento
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        gracias.classList.remove('hidden');
+      } else {
+        alert('Hubo un problema al enviar el formulario. Intenta de nuevo.');
+      }
+    }).catch(error => {
+      alert('Error al enviar: ' + error.message);
+    });
+  });
+</script>
+
+  <!-- Mensaje de despedida -->
+  <section class="fade-in slide-up py-10 px-6 text-center">
+    <h2 class="romantic-font text-3xl text-[#7b7055] mb-4">¡Te esperamos!</h2>
+    <p class="uppercase tracking-wide text-[#7b7055] max-w-xl mx-auto leading-relaxed">
+      Tu presencia es importante para nosotros,<br />
+      por favor confirma tu asistencia.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#fdfaf5] text-[#7b7055] py-6 mt-12">
+    <p class="text-sm">© 2025 Stephanie & Aldair.</p>
+    <p class="text-xs italic">Diseñado con amor por nosotros</p>
+  </footer>
 </body>
 </html>
