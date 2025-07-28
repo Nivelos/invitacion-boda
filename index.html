@@ -28,27 +28,30 @@
 <body class="text-center text-gray-800 bg-fixed bg-[url('https://www.transparenttextures.com/patterns/pw-maze-white.png')]">
 
   <!-- Encabezado superior con logo y frase -->
-  <section class="flex flex-col items-center justify-center py-12 bg-[#fdfaf5] fade-in slide-up min-h-[40vh]">
-    <img src="img/logo.png" alt="Logo de Stephanie y Aldair" class="w-32 h-auto mb-4" />
-    <p class="italic text-lg text-cafe text-center max-w-xl">"Paguenme una feria por la pagina, no sean malos me muero de hambre"</p>
+  <section class="flex flex-col items-center justify-center py-4 bg-[#fdfaf5] fade-in slide-up min-h-[20vh]">
+    <img src="img/logo.png" alt="Logo de Stephanie y Aldair" class="w-24 h-auto mb-2" />
+    <p class="italic text-base text-cafe text-center max-w-xl">
+      "Te amaré para siempre, por el resto de mi vida, y aún más allá de la eternidad."
+    </p>
   </section>
 
-  <!-- Encabezado con parallax reducido -->
-  <section class="relative h-[50vh] flex justify-center items-center text-white overflow-hidden">
-    <div class="absolute inset-0 bg-[url('img/portada.jpg')] bg-cover bg-center blur-md opacity-70"></div>
-    <div class="relative z-10 text-center px-4">
-      <p class="uppercase tracking-widest text-[15px] text-black">TENEMOS EL HONOR DE INVITARTE A NUESTRA BODA</p>
-      <h1 class="text-6xl mt-2 romantic-font text-black">Stephanie y Aldair</h1>
-    </div>
+  <!-- Imagen principal sin blur, visible completa -->
+  <section class="w-full bg-[#fdfaf5]">
+    <img src="img/portada2.jpg" alt="Stephanie y Aldair" class="w-full h-auto max-h-[80vh] object-contain mx-auto" />
   </section>
 
+  <!-- Texto debajo de la imagen -->
+  <section class="text-center py-6 fade-in slide-up px-4">
+    <p class="uppercase tracking-widest text-[15px] text-cafe">TENEMOS EL HONOR DE INVITARTE A NUESTRA BODA</p>
+    <h1 class="text-5xl mt-16 romantic-font text-cafe">Stephanie y Aldair</h1>
+  </section>
 
   <!-- Fecha central -->
   <section class="mt-10 fade-in slide-up">
     <p class="uppercase text-sm">SÁBADO</p>
     <div class="text-6xl font-bold text-cafe">15</div>
     <p class="uppercase text-sm tracking-widest mt-4">NOVIEMBRE</p>
-    <p class="text-sm">2025 - 4:00 PM</p>
+    <p class="text-sm">2025 - 5:00 PM</p>
   </section>
 
   <!-- Cuenta regresiva -->
@@ -80,28 +83,18 @@
     </div>
   </section>
 
-
-  <!-- Detalles del evento -->
-  <section class="fade-in slide-up py-8 px-6">
-    <h2 class="text-2xl font-bold text-cafe mb-4">Detalles del evento</h2>
-    <p class="mb-2">📍 Lugar: San Jerónimo, Zacatecas</p>
-    <p class="mb-2">🎩 Código de vestimenta: Formal elegante</p>
-    <p class="mb-2">⏰ Hora de llegada recomendada: 3:30 PM</p>
-    <a href="https://maps.google.com?q=San+Geronimo+Zacatecas" target="_blank" class="text-pink-700 underline">Ver en Google Maps</a>
-  </section>
-
   <!-- Nuestros Padres -->
   <section class="fade-in slide-up py-10 px-6">
     <h2 class="text-2xl romantic-font text-cafe mb-6 text-5xl">Nuestros Padres:</h2>
 
     <div class="mb-6">
-      <h3 class="uppercase text-sm font-semibold tracking-wide text-[#444]">De la novia</h3>
-      <p class="italic text-gray-700">Fanny Mayela Lara de la Rosa<br>Luis Ángel Ledezma Lopez</p>
+      <h3 class="uppercase text-sm font-semibold text-cafe tracking-wide text-[#444]">De la novia</h3>
+      <p class="italic text-cafe">Fanny Mayela Lara de la Rosa<br>Luis Ángel Ledezma Lopez</p>
     </div>
 
     <div>
-      <h3 class="uppercase text-sm font-semibold tracking-wide text-[#444]">Del novio</h3>
-      <p class="italic text-gray-700 mb-2">Eleazar Castellanos Rosette<br>Antonieta Cruz Figueroa</p>
+      <h3 class="uppercase text-sm font-semibold text-cafe tracking-wide text-[#444]">Del novio</h3>
+      <p class="italic text-cafe mb-2">Antonieta Cruz Figueroa<br>Eleazar Castellanos Rosette</p>
     </div>
   </section>
 
@@ -112,45 +105,37 @@
   <!-- ANILLOS -->
   <div class="mb-6">
     <img src="img/icon-anillos.png" alt="Anillos" class="w-36 h-auto mx-auto mb-2" />
-    <h3 class="uppercase text-sm font-semibold tracking-widest text-[#444]">Anillos</h3>
-    <p class="italic text-gray-700">Nombre Persona 1<br>Nombre Persona 2</p>
+    <h3 class="uppercase text-sm font-semibold tracking-widest text-cafe">Anillos</h3>
+    <p class="italic text-cafe">Jessica Michelle Cedillo Guzmán<br>José Alejandro Euan Garrido</p>
   </div>
 
   <!-- LAZO -->
   <div class="mb-6">
     <img src="img/icon-lazo.png" alt="Lazo" class="w-36 h-auto mx-auto mb-2" />
-    <h3 class="uppercase text-sm font-semibold tracking-widest text-[#444]">Lazo</h3>
-    <p class="italic text-gray-700">Nombre Persona 1<br>Nombre Persona 2</p>
+    <h3 class="uppercase text-sm font-semibold tracking-widest text-cafe">Lazo</h3>
+    <p class="italic text-cafe">Nombre Persona 1<br>Nombre Persona 2</p>
   </div>
 
   <!-- ARRAS -->
   <div class="mb-6">
     <img src="img/icon-arras.png" alt="Arras" class="w-36 h-auto mx-auto mb-2" />
-    <h3 class="uppercase text-sm font-semibold tracking-widest text-[#444]">Arras</h3>
-    <p class="italic text-gray-700">Nombre Persona 1<br>Nombre Persona 2</p>
+    <h3 class="uppercase text-sm font-semibold tracking-widest text-cafe">Arras</h3>
+    <p class="italic text-cafe">Nombre Persona 1<br>Nombre Persona 2</p>
   </div>
 
   <!-- VELACIÓN -->
   <div>
     <img src="img/icon-velacion.png" alt="Velación" class="w-36 h-auto mx-auto mb-2" />
-    <h3 class="uppercase text-sm font-semibold tracking-widest text-[#444]">Velación</h3>
-    <p class="italic text-gray-700">Nombre Persona 1<br>Nombre Persona 2</p>
+    <h3 class="uppercase text-sm font-semibold tracking-widest text-cafe">Velación</h3>
+    <p class="italic text-cafe">Nombre Persona 1<br>Nombre Persona 2</p>
   </div>
 
   <section class="fade-in slide-up py-10 px-6 text-center">
-    <!-- Título manuscrito -->
-    <div> 
-      <img src="img/icon-iglesia.png" alt="Iglesia" class="w-36 h-auto mx-auto mb-2" />
-      <h2 class="romantic-font text-3xl text-cafe mb-6">Iglesia "nombre iglesia"</h2>
-    <div class="inline-block border-4 border-beige p-1 bg-white shadow-md">
-      <img src="img/iglesia.png" alt="Iglesia Imagen" class="max-w-full h-auto" />
-    </div>
-    </div>
     <!-- Imagen con marco dorado -->
     <div> 
       <img src="img/icon-lugar.png" alt="Lugar" class="w-36 h-auto mx-auto mb-2" />
-      <h2 class="romantic-font text-3xl text-cafe mb-6">Baluarte San Jéronimo</h2>
-      <p class="italic text-gray-700">RECEPCIÓN X:XX PM</p>
+      <h2 class=" text-3xl text-cafe mb-6">Lugar de ceremonia</h2>
+      <h2 class="romantic-font text-3xl text-cafe mb-6">Jardín Baluarte, San Jéronimo</h2>
     </div>
     <div class="inline-block border-4 border-beige p-1 bg-white shadow-md mt-6">
       <img src="img/santuario.png" alt="Baluarte San Jerónimo" class="max-w-full h-auto" />
@@ -158,7 +143,7 @@
     <!-- Dirección y botón de cómo llegar -->
     <div class="mt-4 text-center">
       <p class="italic text-cafe mb-4">
-        Baluarte San Jerónimo, Guadalupe 701, 98650 San Jerónimo, Zac.
+        Jardín Baluarte, San Jerónimo, Guadalupe 701, 98650 San Jerónimo, Zac.
       </p>
       <a href="https://www.google.com/maps?q=Baluarte+San+Jerónimo,+Guadalupe+701,+98650+San+Jerónimo,+Zacatecas"
         target="_blank"
@@ -180,11 +165,11 @@
       <div class="mb-10 flex justify-start items-center relative mt-[-40px]">
         <div class="absolute left-1/2 transform -translate-x-1/2 top-[100px] md:top-[190px] w-4 h-4 bg-beige rounded-full z-10"></div>
         <div class="w-1/2 pr-6 text-right">
-          <p class="text-sm text-cafe font-semibold">6:00 PM</p>
-          <p class="italic">Ceremonia Religiosa</p>
+          <p class="text-sm text-cafe font-semibold">5:00 PM</p>
+          <p class="italic text-cafe">Ceremonia civil</p>
         </div>
         <div class="w-1/2 pl-2 flex justify-start items-center">
-          <img src="img/icon-ceremonia-evento.png" class="w-22 h-22 my-2" />
+          <img src="img/icon-ceremonia-civil3.png" class="w-22 h-22 my-2" />
         </div>
       </div>
 
@@ -195,8 +180,8 @@
           <img src="img/icon-recepcion-evento.png" class="w-22 h-22 my-2" />
         </div>
         <div class="w-1/2 pl-6 text-left">
-          <p class="text-sm text-cafe font-semibold">8:00 PM</p>
-          <p class="italic">Recepción</p>
+          <p class="text-sm text-cafe font-semibold">6:00 PM</p>
+          <p class="italic text-cafe">Recepción</p>
         </div>
       </div>
 
@@ -204,8 +189,8 @@
       <div class="mb-10 flex justify-start items-center relative">
         <div class="absolute left-1/2 transform -translate-x-1/2 top-[100px] md:top-[190px] w-4 h-4 bg-beige rounded-full z-10"></div>
         <div class="w-1/2 pr-6 text-right">
-          <p class="text-sm text-cafe font-semibold">9:00 PM</p>
-          <p class="italic">Cena</p>
+          <p class="text-sm text-cafe font-semibold">7:00 PM</p>
+          <p class="italic text-cafe">Cena</p>
         </div>
         <div class="w-1/2 pl-2 flex justify-start items-center">
           <img src="img/icon-cena-evento.png" class="w-22 h-22 my-2" />
@@ -219,8 +204,8 @@
           <img src="img/icon-vals-evento.png" class="w-22 h-22 my-2" />
         </div>
         <div class="w-1/2 pl-6 text-left">
-          <p class="text-sm text-cafe font-semibold">9:45 PM</p>
-          <p class="italic">Vals</p>
+          <p class="text-sm text-cafe font-semibold">8:30 PM</p>
+          <p class="italic text-cafe">Vals</p>
         </div>
       </div>
 
@@ -228,8 +213,8 @@
       <div class="mb-10 flex justify-start items-center relative">
         <div class="absolute left-1/2 transform -translate-x-1/2 top-[100px] md:top-[190px] w-4 h-4 bg-beige rounded-full z-10"></div>
         <div class="w-1/2 pr-6 text-right">
-          <p class="text-sm text-cafe font-semibold">10:15 PM</p>
-          <p class="italic">Fiesta</p>
+          <p class="text-sm text-cafe font-semibold">9:00 PM</p>
+          <p class="italic text-cafe">Fiesta</p>
         </div>
         <div class="w-1/2 pl-2 flex justify-start items-center">
           <img src="img/icon-fiesta-evento.png" class="w-22 h-22 my-2" />
@@ -241,14 +226,12 @@
         <div class="absolute left-1/2 transform -translate-x-1/2 top-auto bottom-[80px] md:top-auto md:bottom-[150px] w-4 h-4 bg-beige rounded-full z-10"></div>
         <div class="mt-20 text-center">
           <p class="text-sm text-cafe font-semibold">2:00 AM</p>
-          <p class="italic mb-4">Nos despedimos</p>
+          <p class="italic text-cafe mb-4">Nos despedimos</p>
           <img src="img/icon-despedida-evento.png" class="w-30 h-20 mx-auto" />
         </div>
       </div>
     </div>
   </section>
-
-
 
   <!-- Código de Vestimenta -->
   <section class="fade-in slide-up py-10 px-6 text-center">
@@ -264,21 +247,22 @@
     <!-- Nota importante -->
     <p class="text-cafe font-medium mb-2 uppercase">Por favor no usar blanco o similares</p>
     <p class="italic text-sm text-cafe mb-6">(Colores reservados para la novia)</p>
-
-    <!-- Nota sobre niños -->
-    <p class="italic text-sm text-cafe max-w-lg mx-auto">
-      No se si quieran niños o no
-    </p>
   </section>
 
 
   <!-- Galería de fotos -->
   <section class="fade-in py-10 px-6">
-    <h2 class="text-2xl font-bold text-cafe mb-6">Nuestros momentos</h2>
+    <h2 class="text-2xl romantic-font text-cafe mb-10 text-5xl">Nuestros momentos</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       <img src="img/fotohistoria1.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto1">
       <img src="img/fotohistoria2.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto2">
+      <img src="img/fotohistoria4.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto3">
+      <img src="img/fotohistoria5.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto3">
+      <img src="img/fotohistoria8.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto3">
+      <img src="img/fotohistoria7.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto3">
+      <img src="img/fotohistoria6.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto3">
       <img src="img/fotohistoria3.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto3">
+      <img src="img/fotohistoria9.jpg" class="rounded-lg shadow-md zoom-in w-full" alt="foto3">
     </div>
   </section>
 
@@ -402,4 +386,5 @@
   </footer>
 </body>
 </html>
+
 
