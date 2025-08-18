@@ -28,12 +28,16 @@
 <body class="text-center text-gray-800 bg-fixed bg-[url('https://www.transparenttextures.com/patterns/pw-maze-white.png')]">
 
   <!-- Encabezado superior con logo y frase -->
-  <section class="flex flex-col items-center justify-center py-4 bg-[#fdfaf5] fade-in slide-up min-h-[20vh]">
-    <img src="img/logo.png" alt="Logo de Stephanie y Aldair" class="w-24 h-auto mb-2" />
-    <p class="italic text-base text-cafe text-center max-w-xl">
-      "Te amaré para siempre, por el resto de mi vida, y aún más allá de la eternidad."
-    </p>
-  </section>
+  <section
+  class="flex flex-col items-center justify-center
+         pt-10 md:pt-16 [padding-top:max(env(safe-area-inset-top),2.5rem)]
+         pb-6 bg-[#fdfaf5] fade-in slide-up min-h-[24vh]">
+  <img src="img/logo.png" alt="Logo de Stephanie y Aldair"
+       class="block w-28 sm:w-32 md:w-36 lg:w-40 h-auto mb-3" />
+  <p class="italic text-base text-cafe text-center max-w-xl px-4">
+    "Te amaré para siempre, por el resto de mi vida, y aún más allá de la eternidad."
+  </p>
+</section>
 
   <!-- Imagen principal sin blur, visible completa -->
   <section class="w-full bg-[#fdfaf5]">
@@ -43,7 +47,7 @@
   <!-- Texto debajo de la imagen -->
   <section class="text-center py-6 fade-in slide-up px-4">
     <p class="uppercase tracking-widest text-[15px] text-cafe">TENEMOS EL HONOR DE INVITARTE A NUESTRA BODA</p>
-    <h1 class="text-8xl  mt-16 romantic-font text-[#D94F00]">Stephanie y Aldair</h1>
+    <h1 class="text-6xl  mt-16 romantic-font text-[#D94F00]">Stephanie y Aldair</h1>
   </section>
 
   <!-- Fecha central -->
@@ -392,27 +396,37 @@
     <p class="text-xs italic">¿Quieres una invitación digital? Mandame correo.</p>
     <p class="text-xs italic">Contacto: ivanledezmacontacto@gmail.com</p>
   </footer>
-
+</section>
   <!-- Música de fondo -->
-  <audio id="musica" loop>
+  <audio id="musica" loop preload="auto" playsinline>
     <source src="audio/cancionPaginaBoda.mp3" type="audio/mpeg">
   </audio>
 
+  <!-- Botón flotante de música -->
+  <button id="btn-musica"
+          class="fixed bottom-5 right-5 z-50 bg-[#fdfaf5] text-cafe border border-cafe rounded-full shadow-md px-4 py-2 text-sm font-semibold hover:bg-cafe hover:text-white transition">
+    ▶ Música
+  </button>
+
   <script>
-    document.addEventListener('click', function () {
-      const audio = document.getElementById('musica');
-      if (audio.paused) {
-        audio.play().catch((error) => {
-          console.warn('No se pudo reproducir la música:', error);
-        });
+    const audio = document.getElementById('musica');
+    const btn = document.getElementById('btn-musica');
+    let reproduciendo = false;
+    btn.addEventListener('click', async () => {
+      if (!reproduciendo) {
+        try {
+          await audio.play();
+          reproduciendo = true;
+          btn.textContent = '⏸ Pausar';
+        } catch (err) {
+          console.warn('No se pudo reproducir la música:', err);
+        }
+      } else {
+        audio.pause();
+        reproduciendo = false;
+        btn.textContent = '▶ Música';
       }
-    }, { once: true });
+    });
   </script>
 </body>
 </html>
-
-
-
-
-
-
